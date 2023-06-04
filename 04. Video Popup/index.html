@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Trailer Popup</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js" defer></script>
+
+    <!-- youtube iframe API -->
+    <!-- USED for achieve desired functionality in the youtube embedded video -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- todo -->
+
+
+</head>
+<body class="m-0 box-border font-sans flex flex-col items-center h-screen bg-[#EDE9E8]">
+
+    <div class="main-container flex flex-col max-w-[550px] p-[20px] mt-24 shadow-md shadow-gray-500 rounded-md">
+
+        <img src="hq720.webp" class="max-w-[100%] mb-[15px] rounded-[10px]" alt="movie image">
+
+        <div class="text-field flex flex-col justify-center items-center">
+
+            
+            <h2 class="text-black font-bold text-2xl">Think School</h2>
+            
+            <p class="text-black font-semibold mx-0 my-[15px] text-center">Economic Crissis in America: Big Signal for India?</p>
+            
+            <button type="button" class="btn bg-sky-600 text-white px-5 py-[10px] cursor-pointer max-w-fit rounded-md hover:bg-orange-600"> Watch Now</button>
+
+        </div>
+
+    </div>
+
+
+    <div class="trailer-container fixed top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2  bg-[#EDE9E8] w-full h-full hidden justify-center items-center">
+        <!-- <video src="trailer.mp4" controls class="relative max-w-[90%] md:max-w-[900px] outline-none"></video> -->
+
+        <div class="flex flex-col space-y-5 m-20 p-10 shadow-md shadow-gray-400 rounded-md relative w-1/2">
+
+                <img src="close-icon.png" class="close-icon cursor-pointer h-8 w-8 absolute right-12 top-4" alt="close icon">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qapDyBW_S-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" id="player" class="rounded-md" allowfullscreen></iframe>
+
+            
+        </div>
+
+    </div>
+
+
+</body>
+</html>
